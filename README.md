@@ -7,3 +7,7 @@ This project is only an experimental setup to learn how to containerize an appli
 1. **Build the Docker Image:**
    ```bash
    docker build -t react-movies-app .
+
+2. **Run the Container:**
+   ```bash
+   docker run -d -p 80:80 --name movies-site react-movies-app .
