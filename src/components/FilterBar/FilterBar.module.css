@@ -1,0 +1,40 @@
+.bar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 2rem;
+  max-width: var(--container-max);
+  margin: 0 auto 3rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.5rem 1.25rem;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-fast);
+  letter-spacing: 0.04em;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass-strong);
+  border-color: var(--border-card);
+}
+
+.tab.active {
+  color: #fff;
+  border-color: transparent;
+}
+
+.tab.active[data-key="tout"] { background: rgba(255,255,255,0.12); color: var(--text-primary); border-color: var(--border-card); }
+.tab.active[data-key="films"] { background: var(--accent-movie); box-shadow: 0 4px 16px rgba(229,56,59,0.35); }
+.tab.active[data-key="series"] { background: var(--accent-series); box-shadow: 0 4px 16px rgba(76,201,240,0.35); color: #000; }
+.tab.active[data-key="jeux"] { background: var(--accent-game-bright); box-shadow: 0 4px 16px rgba(199,125,255,0.35); color: #000; }
+
+@media (max-width: 768px) {
+  .bar { padding: 0 1rem; }
+}

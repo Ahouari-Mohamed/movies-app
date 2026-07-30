@@ -1,0 +1,38 @@
+.page {
+  min-height: 100vh;
+}
+
+.filterWrap {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.searchHeader {
+  padding: 120px 2rem 3rem;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.searchHeaderInner {
+  border-left: 3px solid var(--accent-movie);
+  padding-left: 1.25rem;
+}
+
+.searchLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+  font-family: var(--font-mono);
+}
+
+.searchTitle {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+}
+
+.footerSpacer {
+  height: 4rem;
+}

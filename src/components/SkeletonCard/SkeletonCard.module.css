@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.portrait .image {
+  width: 160px;
+  height: 240px;
+  border-radius: var(--card-radius);
+}
+
+.landscape .image {
+  width: 280px;
+  height: 160px;
+  border-radius: var(--card-radius);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  height: 14px;
+  width: 80%;
+  border-radius: 4px;
+}
+
+.sub {
+  height: 11px;
+  width: 55%;
+  border-radius: 4px;
+}
